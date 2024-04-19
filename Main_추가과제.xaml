@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:Annotation.AnnotationText="UPTF00000088eyI8SGVscExpbms+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8SW5pdGlhbFRvb2x0aXA+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8VmVyc2lvbj5rX19CYWNraW5nRmllbGQiOjF9" sap:VirtualizedContainerService.HintSize="852.8,8615.2" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:snm="clr-namespace:System.Net.Mail;assembly=System.Net.Mail" xmlns:ss="clr-namespace:System.Security;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:Annotation.AnnotationText="UPTF00000088eyI8SGVscExpbms+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8SW5pdGlhbFRvb2x0aXA+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8VmVyc2lvbj5rX19CYWNraW5nRmllbGQiOjF9" sap:VirtualizedContainerService.HintSize="852.8,8616" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:snm="clr-namespace:System.Net.Mail;assembly=System.Net.Mail" xmlns:ss="clr-namespace:System.Security;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -132,7 +132,7 @@
       <AssemblyReference>System.Linq.Async.Queryable</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="830.4,8550.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="830.4,8551.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="s:String[]" Name="arr종류" />
       <Variable x:TypeArguments="scg:List(x:String)" Name="list종류" />
@@ -161,7 +161,7 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="UiPath-Gmail" CacheStrategy="None" DisplayName="Get Credential" FolderPath="diffldiffl77@gmail.com's workspace" sap:VirtualizedContainerService.HintSize="768,183.2" sap2010:WorkflowViewState.IdRef="GetRobotCredential_2" Password="[sstr_PW]" Username="[str_id]" />
-    <ui:GetIMAPMailMessages ClientName="{x:Null}" ClientVersion="{x:Null}" Password="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" sap2010:Annotation.AnnotationText="교재 p.277&#xA;&#xA;필터식 사용해서 어떤 것을 읽어올 지 필터링할 수 있음(구글링해서 기능 찾아보기)&#xA;&#xA;예시) &quot;FROM 'rpa.sj.jeong@gmail.com'&quot;&#xA;&#xA;설정패널-호스트-메일폴더-여기에 라벨링넣으면 라벨링으로도 들어온다고하심(?)" DeleteMessages="False" DisplayName="Get IMAP Mail Messages" Email="[str_id]" EnableSSL="True" FilterExpression="FROM 'rpa.sj.jeong@gmail.com'" FilterExpressionCharacterSet="US-ASCII" sap:VirtualizedContainerService.HintSize="768,268" sap2010:WorkflowViewState.IdRef="GetIMAPMailMessages_1" IgnoreCRL="False" MailFolder="Inbox" MarkAsRead="False" Messages="[listMail]" OnlyUnreadMessages="False" OrderByDate="NewestFirst" Port="993" SecureConnection="Auto" SecurePassword="[sstr_PW]" Server="imap.gmail.com" Top="5">
+    <ui:GetIMAPMailMessages ClientName="{x:Null}" ClientVersion="{x:Null}" Password="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" sap2010:Annotation.AnnotationText="교재 p.277&#xA;&#xA;필터식 사용해서 어떤 것을 읽어올 지 필터링할 수 있음(구글링해서 기능 찾아보기)&#xA;&#xA;예시) &quot;FROM 'rpa.sj.jeong@gmail.com'&quot;&#xA;&#xA;설정패널-호스트-메일폴더-여기에 라벨링넣으면 라벨링으로도 들어온다고하심(?)" DeleteMessages="False" DisplayName="Get IMAP Mail Messages" Email="[str_id]" EnableSSL="True" FilterExpression="FROM 'rpa.sj.jeong@gmail.com'" FilterExpressionCharacterSet="US-ASCII" sap:VirtualizedContainerService.HintSize="768,268.8" sap2010:WorkflowViewState.IdRef="GetIMAPMailMessages_1" IgnoreCRL="False" MailFolder="Inbox" MarkAsRead="False" Messages="[listMail]" OnlyUnreadMessages="False" OrderByDate="NewestFirst" Port="993" SecureConnection="Auto" SecurePassword="[sstr_PW]" Server="imap.gmail.com" Top="5">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
@@ -199,7 +199,7 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                   <ui:TextToLeftRight DisplayName="Text to Left/Right" FullText="[currentMailMessage.Body]" sap:VirtualizedContainerService.HintSize="433.6,314.4" sap2010:WorkflowViewState.IdRef="TextToLeftRight_5" Separator="- 추출 항목 : " SeparatorKey="Custom" TextToLeft="[str버림]" TextToRight="[str추출리스트]" />
-                  <ui:TextToLeftRight sap2010:Annotation.AnnotationText="구분자: &quot;*&#xA;*- 추출 일자 : &quot;" CustomSeparatorEnabled="False" DisplayName="str추출리스트 추출ㅣText to Left/Right" FullText="[str추출리스트]" sap:VirtualizedContainerService.HintSize="433.6,325.6" sap2010:WorkflowViewState.IdRef="TextToLeftRight_6" Separator="&#xD;&#xA;" SeparatorKey="NewLine" TextToLeft="[str추출리스트]" TextToRight="[str추출일자]">
+                  <ui:TextToLeftRight sap2010:Annotation.AnnotationText="구분자: &quot;*&#xA;*- 추출 일자 : &quot;" CustomSeparatorEnabled="False" DisplayName="str추출리스트 추출ㅣText to Left/Right" FullText="[str추출리스트]" sap:VirtualizedContainerService.HintSize="433.6,325.6" sap2010:WorkflowViewState.IdRef="TextToLeftRight_6" Separator="&#xA;" SeparatorKey="NewLine" TextToLeft="[str추출리스트]" TextToRight="[str추출일자]">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
@@ -213,7 +213,7 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </ui:TextToLeftRight>
-                  <ui:TextToLeftRight CustomSeparatorEnabled="False" DisplayName="Text to Left/Right" FullText="[str추출일자]" sap:VirtualizedContainerService.HintSize="433.6,281.6" sap2010:WorkflowViewState.IdRef="TextToLeftRight_8" Separator="&#xD;&#xA;" SeparatorKey="NewLine" TextToLeft="[str추출일자]" TextToRight="[str버림]" />
+                  <ui:TextToLeftRight CustomSeparatorEnabled="False" DisplayName="Text to Left/Right" FullText="[str추출일자]" sap:VirtualizedContainerService.HintSize="433.6,281.6" sap2010:WorkflowViewState.IdRef="TextToLeftRight_8" Separator="&#xA;" SeparatorKey="NewLine" TextToLeft="[str추출일자]" TextToRight="[str버림]" />
                   <Assign sap:VirtualizedContainerService.HintSize="433.6,121.6" sap2010:WorkflowViewState.IdRef="Assign_14">
                     <Assign.To>
                       <OutArgument x:TypeArguments="x:String">[str추출일자]</OutArgument>
@@ -642,7 +642,7 @@
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <ui:TextToLeftRight sap2010:Annotation.AnnotationText="currentrow(2) : 기간/장소 &#xA;&#xA;새 줄로 구분되어있음&#xA;구분자 앞: 기간&#xA;구분자 뒤: 장소" CustomSeparatorEnabled="False" DisplayName="기간,장소 합쳐진 text 분리ㅣText to Left/Right" FullText="[CurrentRow(2).ToString]" sap:VirtualizedContainerService.HintSize="480,373.6" sap2010:WorkflowViewState.IdRef="TextToLeftRight_4" Separator="&#xD;&#xA;" SeparatorKey="NewLine" TextToLeft="[str기간]" TextToRight="[str장소]">
+                            <ui:TextToLeftRight sap2010:Annotation.AnnotationText="currentrow(2) : 기간/장소 &#xA;&#xA;새 줄로 구분되어있음&#xA;구분자 앞: 기간&#xA;구분자 뒤: 장소" CustomSeparatorEnabled="False" DisplayName="기간,장소 합쳐진 text 분리ㅣText to Left/Right" FullText="[CurrentRow(2).ToString]" sap:VirtualizedContainerService.HintSize="480,373.6" sap2010:WorkflowViewState.IdRef="TextToLeftRight_4" Separator="&#xA;" SeparatorKey="NewLine" TextToLeft="[str기간]" TextToRight="[str장소]">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
@@ -702,7 +702,7 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </ui:CommentOut>
-                            <ui:AddDataRow DataRow="{x:Null}" sap2010:Annotation.AnnotationText="currentrow가 열이 더 길대&#xD;&#xA;dt탑3 열4+1개&#xD;&#xA;dt결과 열 5개 인데 똑같구만.." ArrayRow="[CurrentRow.ItemArray]" DataTable="[dt결과]" DisplayName="***Add Data Row" sap:VirtualizedContainerService.HintSize="480,271.2" sap2010:WorkflowViewState.IdRef="AddDataRow_1">
+                            <ui:AddDataRow DataRow="{x:Null}" sap2010:Annotation.AnnotationText="currentrow가 열이 더 길대&#xA;dt탑3 열4+1개&#xA;dt결과 열 5개 인데 똑같구만.." ArrayRow="[CurrentRow.ItemArray]" DataTable="[dt결과]" DisplayName="***Add Data Row" sap:VirtualizedContainerService.HintSize="480,271.2" sap2010:WorkflowViewState.IdRef="AddDataRow_1">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
